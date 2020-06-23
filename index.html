@@ -16,72 +16,74 @@
     <div class="container">
 
         <div class=" my-5" onclick="('myplaceholder')">
-            <input id="inputField" class="form-control inputField" type="text" placeholder="">
+            <input id="result" class="form-control inputField" type="text" placeholder="">
         </div>
 
         <div class="row my-3">
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">7</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('7')">7</p>
             </div>
-            <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">8</p>
-            </div>
-            <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">9</p>
-            </div>
-            <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">X</p>
-            </div>
-        </div>
 
-        <div class="row my-3">
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">4</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('8')">8</p>
+            </div>
+
+            <div class= "col">
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('9')">9</p>
             </div>
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">5</p>
-            </div>
-            <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">6</p>
-            </div>
-            <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">-</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('*')">X</p>
             </div>
         </div>
 
         <div class="row my-3">
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">1</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('4')">4</p>
             </div>
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">2</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('5')">5</p>
             </div>
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">3</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('6')">6</p>
             </div>
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">+</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('-')">-</p>
             </div>
         </div>
 
         <div class="row my-3">
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">0</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('1')">1</p>
             </div>
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">.</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('2')">2</p>
             </div>
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">=</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('3')">3</p>
             </div>
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">/</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('+')">+</p>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col">
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('0')">0</p>
+            </div>
+            <div class="col">
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('.')">.</p>
+            </div>
+            <div class="col">
+                <p class="bg-secondary py-3 text-center text-light" onclick="getResult('')">=</p>
+            </div>
+            <div class="col">
+                <p class="bg-secondary py-3 text-center text-light" onclick="getNumber('/')">/</p>
             </div>
         </div>
         
         <div class="row my-3">
             <div class="col">
-                <p class="bg-secondary py-3 text-center text-light">C</p>
+                <p class="bg-secondary py-3 text-center text-light" onclick="clearResult('')">C</p>
             </div>
         </div>
 
